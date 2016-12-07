@@ -1,0 +1,209 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Baymax</title>
+  </head>
+  <style>
+    body{
+      background-color: #595959;
+    }
+
+    .baymax {
+      margin: 0 auto;
+      height: 600px;
+      overflow: hidden;
+    }
+
+    .head {
+      position: relative;
+      height: 64px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin: 0 auto;
+      margin-bottom: -20px;
+      border-bottom: 5px solid #e0e0e0;
+    }
+
+    .eyes {
+      width: 13px;
+      height: 11px;
+      background-color: #282828;
+      border-radius: 50%;
+    }
+
+    .left-eye {
+      position: absolute;
+      left: 20px;
+      top: 30px;
+    }
+    .left-eye::after {
+      display: block;
+      position: relative;
+      content: "";
+      top: 5px;
+      width: 50px;
+      border-bottom: 2px solid #282828;
+    }
+    .right-eye {
+      position: absolute;
+      right: 20px;
+      top: 30px;
+    }
+
+    .torso, .belly {
+      margin: 0 auto;
+      height: 200px;
+      width: 180px;
+      background-color: #fff;
+      border-radius: 47%;
+      border: 5px solid #e0e0e0;
+      border-top: none;
+    }
+
+    .belly {
+      height: 300px;
+      width: 245px;
+      margin-top: -140px;
+    }
+
+    .cover {
+      position: relative;
+      width: 184px;
+      background-color: #fff;
+      height: 150px;
+      margin: 0 auto;
+      top: -20px;
+      border-radius: 50%;
+    }
+
+    .heart {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      position: relative;
+      box-shadow: 2px 5px 2px #ccc inset;
+      right: -115px;
+      top: 40px;
+      z-index: 1;
+      border: 1px solid #ccc;
+    }
+
+    .arm {
+      height: 270px;
+      width: 120px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin: 0 auto;
+      position: relative;
+      z-index: -1;
+    }
+
+    .left-arm {
+      top: -350px;
+      left: -100px;
+      transform: rotate(20deg);
+    }
+
+    .right-arm {
+      transform: rotate(-20deg);
+      left: 100px;
+      top: -620px;
+    }
+
+    .big-finger {
+      height: 50px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: relative;
+      top: 250px;
+    }
+
+    .l-big-finger {
+      left: 50px;
+      transform: rotate(-50deg);
+    }
+
+    .r-big-finger {
+      left: 50px;
+      transform: rotate(50deg);
+    }
+
+    .small-finger {
+      height: 35px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: relative;
+      top: 195px;
+    }
+
+    .l-small-finger {
+      left: 66px;
+      transform: rotate(-40deg);
+    }
+
+    .r-small-finger {
+      left: 37px;
+      transform: rotate(40deg);
+    }
+
+    .leg {
+      position: relative;
+      height: 170px;
+      width: 90px;
+      background-color: #fff;
+      z-index: -2;
+      margin: 0 auto;
+    }
+
+    .left-leg {
+      border-radius: 40% 30% 10% 45%;
+      top: -640px;
+      left: -45px;
+      transform: rotate(-1deg);
+    }
+
+    .right-leg {
+      border-radius: 30% 40% 45% 10%;
+      top: -810px;
+      left: 50px;
+      transform: rotate(1deg);
+    }
+    
+  </style>
+  <body>
+    <div class="baymax">
+
+      <div class="head">
+        <div class="eyes left-eye"></div>
+        <div class="eyes right-eye"></div>
+      </div>
+
+      <div class="torso">
+        <div class="heart"></div>
+      </div>
+
+      <div class="belly">
+        <div class="cover"></div>
+      </div>
+
+      <div class="arm left-arm">
+        <div class="big-finger l-big-finger"></div>
+        <div class="small-finger l-small-finger"></div>
+      </div>
+
+      <div class="arm right-arm">
+        <div class="big-finger r-big-finger"></div>
+        <div class="small-finger r-small-finger"></div>
+      </div>
+
+      <div class="leg left-leg"></div>
+
+      <div class="leg right-leg"></div>
+    </div>
+  </body>
+</html>
